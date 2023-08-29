@@ -28,17 +28,5 @@ authentication:
     password:
   security:
     jwt:
-      secret-key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
-      expiration-a: 30
-      expiration-b: 60
-      expiration-c: 1000
 
-interface:
-  ad:
-    context-factory: com.sun.jndi.ldap.LdapCtxFactory
-    security-authentication: simple
-    url: ldap://10.9.212.96:389
-    domain: DOMAIN.KTB.CO.TH
-    base: OU=KTBUSERS,DC=DOMAIN,DC=KTB,DC=CO,DC=TH
-    filter: (&(objectClass=user)(sAMAccountName={0}))
 
